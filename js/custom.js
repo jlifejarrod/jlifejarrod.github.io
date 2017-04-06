@@ -301,13 +301,3 @@ document.getElementById('onButton2').onclick = closeError2;
 function closeError2() {
   document.getElementById('onButton2').style.visibility = "hidden";
 }
-
-document.onreadystatechange = function () {
-  var state = document.readyState
-  if (state == 'complete') {
-      setTimeout(function(){
-          document.getElementById('interactive');
-         document.getElementById('load').style.visibility="hidden";
-      },1000);
-  }
-}
