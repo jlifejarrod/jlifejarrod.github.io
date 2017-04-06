@@ -1,0 +1,737 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+html {
+  box-sizing: border-box;
+}
+*,*:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clear fix hack */
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: block;
+} 
+.clearfix:after {
+    clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+html{
+  font-size: 16px;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #22b14c;
+}
+
+h1{
+  margin: auto;
+  color: white;
+  float: left;
+  background-color: #22b14c;
+  padding: 13px 16px;
+  font-weight: 700;
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+  float: none;
+  display: inline-block;
+}
+
+/* Style the links inside the list items */
+ul.topnav li.box a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: impact;
+    font-size: 26px;
+    color: white;
+}
+
+ul.topnav li.active a {
+    color:#ff6666;
+    background-color:#555;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+ /*When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:768px) {
+  ul.topnav li {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+ /*The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:768px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+
+  h1{
+  background-color: #22b14c;
+  margin: auto;
+  font-size: 350%;
+  color: white;
+  float: none;
+  text-align: center;
+  padding: 2px 2px;
+}
+
+#heman{
+  visibility: hidden;
+}
+
+.onButton{
+  visibility: hidden;
+}
+
+#goat{
+  visibility: hidden;
+}
+
+#future{
+  visibility: hidden;
+}
+
+#dcat1 {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+#dcat2 {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+#sexgnome{
+  visibility: hidden;
+}
+
+#magicbutton{
+  visibility: hidden;
+}
+
+}
+
+
+/*******************************************/
+
+#yellow-bar{
+  font-style: "Merriweather";
+  font-style: italic;
+  text-align: center;
+  background-color: yellow;
+  border-bottom: solid black 10px;
+  border-top: solid black 10px;
+  text-decoration: none;
+}
+
+#rideon{
+  height: 90px;
+}
+
+#trim{
+  height: 90px;
+}
+
+/*******************************************/
+
+#main-section{
+  background:url('../images/mow-your-lawn-correctly-hero.jpg') no-repeat center center;
+  background-size: cover;
+  border-bottom: solid black 10px;
+  background-position: top;
+  /*padding-bottom: 90px;*/
+}
+
+/*******************************************/
+
+#main-section .call-to-action {
+  float: right;
+  background: #009900;
+  display: inline-block;
+  padding:20px 40px;
+  margin: 90px;
+  width: 380px;
+  height: 390px;
+  font-size: 34px;
+  line-height: 150%;
+  font-weight: 900;
+  color: white;
+}
+
+#flash{
+  border: 10px solid white; 
+}
+
+#flash.yellow-border { 
+  border: 10px solid #f93; 
+}
+
+#sat{
+  opacity: 1
+}
+
+#sat.white-flash { 
+  opacity: 0.6
+}
+
+#main-section .satisfaction img {
+  width: 20%;
+  height: 20%;
+  position: relative;
+  top: 38em;
+  left: 11em;
+}
+
+#main-section .chimp img {
+  width: 20%;
+  height: 20%;
+  position: relative;
+  top: 16em;
+  left: 11em;
+}
+
+#hypnoc {
+  visibility: hidden;
+}
+
+#hypnoc.show-flash { 
+  visibility: visible;
+}
+
+#main-section .hypnocat img {
+  width: 45%;
+  height: 45%;
+  position: relative;
+  top: 1%;
+  left: 25%;
+}
+
+
+/*******************************************/
+
+#tile-3-section {
+  background:#fff;
+  padding:20px 0;
+  background:url('../images/color-0497-Lawn-Green.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+
+#tile-3-section .orange-div {
+  background: #009900;
+  display: block;
+  padding:4% 6%;
+  font-size: 20px;
+  line-height: 150%;
+  color: white;
+  border: solid white 6px;
+}
+
+#box1.red-border {
+    border: 6px solid red;
+}
+
+#box2.red-border {
+    border: 6px solid red;
+}
+
+#box3.red-border {
+    border: 6px solid red;
+}
+
+#box4.red-border {
+    border: 6px solid red;
+}
+
+#box5.red-border {
+    border: 6px solid red;
+}
+
+#box6.red-border {
+    border: 6px solid red;
+}
+
+.orange-div h2{
+  text-align: center;
+  border: solid white 2px;
+  font-weight: 900;
+  background-color: #A1D490;
+}
+
+.orange-div p{
+  text-align: left;
+}
+
+#movingmower{
+  webkit-animation-name: rotate; 
+  webkit-animation-duration: 0.5s; 
+  webkit-animation-iteration-count: infinite;
+  webkit-animation-timing-function: linear;
+}
+
+
+/*******************************************/
+
+footer {
+  background: #22b14c;
+  color:white;
+  font-size: 18px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 0.1px;
+  padding-top: 3px;
+}
+
+#footflash.black-border {
+    color: black;
+}
+
+/****************buttons accross site***************************/
+.yellow{
+  background: yellow;
+  color: black;
+}
+
+.button{
+  border-radius: 10px;
+  background-color: yellow;
+  padding: 10px 0;
+  max-width: 240px;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  border: solid grey 4px;
+}
+
+.blue{
+  background: yellow;
+  color: black;
+}
+
+/****************moving mower***************************/
+
+#funny-section{
+  background:url('../images/color-0497-Lawn-Green.jpg') repeat center center;
+}
+
+/****************sound effect***************************/
+
+#sound{
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+ /*Extra Small Devices, Phones  */
+@media only screen and (max-width : 480px) {
+
+  #main-section{
+    background: 0;
+    background-size: 0;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-position: inherit;
+    margin: auto;
+    height: 140px;
+  }
+
+  #main-section .call-to-action {
+    float: none;
+    padding:1px 1px;
+    margin: 0px;
+    width: 100%;
+    height: 150px;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  #main-section .hypnocat img {
+    width: 0;
+    height: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+
+  #main-section .hypnocat img {
+    visibility: hidden;
+  }
+
+  #main-section .satisfaction img {
+    visibility: hidden;
+  }
+}
+
+/*==========  Page 2  ==========*/
+
+#flyingmower {
+  background:url('../images/spaceagemower.jpg') repeat center center;
+  border-top: solid 10px;
+  height: 400px;
+}
+
+#flylm {
+  border: solid red 10px;
+  height: 400px;
+  width: 350px;
+}
+
+#tile-2-section {
+  background:url('../images/thickgrass.jpg') no-repeat center center;
+  background-size: cover;
+  border-top: solid 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#tile-2-section .twotwo-div {
+  background: #009900;
+  display: block;
+  padding:4% 6%;
+  width: 85%;
+  font-size: 20px;
+  line-height: 150%;
+  color: white;
+  border: solid white 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.twotwo-div img{
+  width: 250px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid white 2px;
+}
+
+#tile-2-section h2{
+  background-color: black;
+  text-align: center;
+}
+
+​
+
+/*==========  Page 3  ==========*/
+
+#bolt{
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  top: 2em;
+  right: 2em;
+}
+
+#bolt{
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  top: 2em;
+  right: 2em;
+}
+
+#gnome {
+  background:url('../images/Gnome-pattern.jpg') repeat center center;
+  border-bottom: solid black 10px;
+  height: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#start {
+  border: solid red 10px;
+  height: 400px;
+  width: 380px;
+}
+
+
+#dcat1 {
+  margin-left: 8%;
+  padding-top: 5%;
+}
+
+#dcat2 {
+  margin-right: 8%;
+  padding-top: 5%;
+}
+
+#phone{
+  max-width: 100%;
+  padding-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 90px;
+}
+
+#goat{
+  position: inline-block;
+  height: 90px;
+  /*background-position: left;*/
+}
+
+#future{
+  position: inline-block;
+  height: 90px;
+  float: right;
+}
+
+#heman{
+  height: 100px;
+  padding-left: 14px;
+  position: absolute;
+  top: 14em;
+  left: -5em;
+}
+
+
+
+/*.siteok{*/
+  /*position: absolute;*/
+  /*width: 50%;*/
+  /*height: 110%;*/
+  /*top: 35em;*/
+  /*right: 25em;*/
+  /*visibility: hidden;*/
+/*}*/
+
+/*.sitefail{*/
+  /*position: absolute;*/
+  /*width: 50%;*/
+  /*height: 110%;*/
+  /*top: 35em;*/
+  /*right: 25em;*/
+  /*visibility: none;*/
+/*}*/
+
+#siteError{
+  position: absolute;
+  width: 50%;
+  height: 110%;
+  top: 35em;
+  right: 25em;
+  /*visibility: none;*/
+}
+
+.onButton{
+  position: absolute;
+  /*width: 4%;*/
+  /*height: 7%;*/
+  top: 35em;
+  right: 10em;
+}
+
+.onButton2{
+  position: absolute;
+  /*width: 4%;*/
+  /*height: 7%;*/
+  top: 100em;
+  right: 60em;
+}
+
+#musiccat1{
+  display:none;
+  position: absolute;
+  /*width: 4%;*/
+  /*height: 7%;*/
+  top: 25em;
+  right: 60em;
+}
+
+#musiccat2{
+  display:none;
+  position: absolute;
+  width: 10%;
+  /*height: 7%;*/
+  top: 10em;
+  right: 87em;
+}
+
+#djcat11{
+  display:none;
+  position: absolute;
+  width: 12%;
+  /*height: 7%;*/
+  top: 9em;
+  right: 1em;
+}
+
+#djcat2{
+  display:none;
+  position: absolute;
+  width: 13%;
+  /*height: 7%;*/
+  top: 13em;
+  right: 21em;
+}
+
+#djcat3{
+  display:none;
+  position: absolute;
+  width: 17%;
+  /*height: 7%;*/
+  top: 24em;
+  right: 16em;
+}
+
+#magicbutton{
+  /*display:none;*/
+  position: absolute;
+  width: 3%;
+  /*height: 7%;*/
+  top: 37em;
+  right: 30em;
+}
+
+#vintageposter{
+  display:none;
+  position: absolute;
+  width: 26%;
+  /*height: 7%;*/
+  top: 12.5em;
+  right: 67em;
+  border: solid black 5px;
+}
+
+#gremlin{
+  display:none;
+  position: absolute;
+  width: 23%;
+  /*height: 7%;*/
+  top: 16em;
+  right: 37em;
+}
+
+#macgyver{
+  display:none;
+  position: absolute;
+  width: 24%;
+  /*height: 7%;*/
+  top: 11.5em;
+  right: 5em;
+  border: solid black 5px;
+}
+
+#dhalsim{
+  display:none;
+  position: absolute;
+  width: 30%;
+  /*height: 7%;*/
+  top: 18.0em;
+  right: 67em;
+}
+
+#sonicboom{
+  display:none;
+  position: absolute;
+  width: 30%;
+  /*height: 7%;*/
+  top: 30em;
+  right: 2em;
+}
+
+#deletebutton{
+  /*display:none;*/
+  position: absolute;
+  width: 3%;
+  /*height: 7%;*/
+  top: 66em;
+  right: 48em;
+}
+
+#taco{
+  display:none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 24em;
+  /*right: 10em;*/
+}
+
+#sexgnome{
+  /*visibility: hidden;*/
+  position: absolute;
+  width: 25%;
+  top: 78em;
+  left: 40%;
+}
+
