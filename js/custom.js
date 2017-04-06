@@ -223,54 +223,54 @@ var img1 = document.getElementById("magicbutton"),
     img5 = document.getElementById("dhalsim"),
     img6 = document.getElementById("sonicboom");
 
-img1.onmouseover = function(){
+$("#magicbutton").on("mouseover",function(){
 img2.style.display = "block",
 img3.style.display = "block",
 img4.style.display = "block",
 img5.style.display = "block",
 img6.style.display = "block";
 
-}
+});
 
-img1.onmouseout = function(){
+$("#magicbutton").on("mouseout",function(){
 img2.style.display = "none",
 img3.style.display = "none",
 img4.style.display = "none",
 img5.style.display = "none",
 img6.style.display = "none";
 
-}
+});
 
 var img7 = document.getElementById("dcat1"),
     img8 = document.getElementById("musiccat1"),
     img9 = document.getElementById("musiccat2");
 
-img7.onmouseover = function(){
+$("#dcat1").on("mouseover",function(){
 img8.style.display = "block",
 img9.style.display = "block";
-}
+});
 
-img7.onmouseout = function(){
+$("#dcat1").on("mouseout",function(){
 img8.style.display = "none",
 img9.style.display = "none";
-}
+});
 
 var img10 = document.getElementById("dcat2"),
     img11 = document.getElementById("djcat11"),
     img12 = document.getElementById("djcat2"),
     img13 = document.getElementById("djcat3");
 
-img10.onmouseover = function(){
+$("#dcat2").on("mouseover",function(){
 img11.style.display = "block",
 img12.style.display = "block",
 img13.style.display = "block";
-}
+});
 
-img10.onmouseout = function(){
+$("#dcat2").on("mouseout",function(){
 img11.style.display = "none",
 img12.style.display = "none",
 img13.style.display = "none";
-}
+});
 
 
 
