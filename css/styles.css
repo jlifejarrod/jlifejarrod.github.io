@@ -734,3 +734,27 @@ footer {
   top: 78em;
   left: 40%;
 }
+
+#count{
+  position: absolute;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#count1{
+  background-position: center;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: #22b14c;
+}
+
+
+
